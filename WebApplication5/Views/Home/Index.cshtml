@@ -116,7 +116,7 @@
 
             <div id="panel">
                 <p>Great! First bug was detected!</p>
-                <input id="b1" type="number" hidden name="Bug1" value=""/>
+                <input id="b1" type="number" hidden name="Bug1" value="" />
             </div>
 
             <ul>
@@ -139,7 +139,15 @@
         </div>
     </div>
 
-    <button class="btn btn-primary btn-lg" type="submit">End testing</button>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5 ">
+                <button class="btn btn-primary btn-lg " type="submit" style="">End testing</button>
+            </div>
+
+        </div>
+    </div>
+
 </form>
 
 
@@ -152,6 +160,5 @@
     function myFunction2() {
         document.getElementById("cardForBug2").style.display = "block";
         document.getElementById("b2").value = 1;
-
     }
 </script>

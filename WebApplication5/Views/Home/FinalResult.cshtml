@@ -4,7 +4,12 @@
 @{
     ViewData["Title"] = "FinalResult";
 }
-<h1>Results page</h1>
+<h1>Твой результат:</h1>
+
+@if (Model.Result == 0)
+{
+    <h2>Тестирование не твоё сынок.</h2>
+}
 
 @if (Model.Result == 1)
 {
