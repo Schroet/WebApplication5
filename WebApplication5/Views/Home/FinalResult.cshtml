@@ -1,0 +1,19 @@
+﻿@model WebApplication5.Models.ResultsModel
+
+
+@{
+    ViewData["Title"] = "FinalResult";
+}
+<h1>Results page</h1>
+
+@if (Model.Result == 1)
+{
+    <h2>Тестирование не твоё сынок.</h2>
+}
+
+@if (Model.Result == 2)
+{
+    <h2>Неплохо.</h2>
+}
+
+
