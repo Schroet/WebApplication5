@@ -26,11 +26,10 @@ namespace WebApplication5.Controllers
         }
 
 
-        public IActionResult About()
+        public IActionResult About(ResultsModel model)
         {
             ViewData["Message"] = "Your application description page.";
-
-            return View();
+            return View(model);
         }
 
         public IActionResult Contact()
